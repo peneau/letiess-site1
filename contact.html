@@ -1,60 +1,18 @@
+
 <!DOCTYPE html>
-
-<html><head><title>Contact</title><link href="style.css" rel="stylesheet"/>
-<style>
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  nav a:hover {
-    text-decoration: underline;
-  }
-  .logo {
-    height: 60px;
-  }
-</style>
-<style>
-.contact-box {
-  background-color: #f8f8f8;
-  padding: 1.2rem 1.5rem;
-  margin-top: 2rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1rem;
-  color: #111;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.08);
-}
-</style>
-</head>
-<body><div class="top-bar"><img class="logo" src="logo.png" style="height:100px;"/>
-<nav>
-<ul>
-<li><a href="index.html">Accueil</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="realisations.html">Réalisations</a></li>
-<li><a href="qualifications.html">Qualifications</a></li>
-<li><a href="partenaires.html">Partenaires</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="depannage_entretien.html"><span style="color:#007BFF;">Dépannage</span> <span style="color:#DC3545;">&amp; Entretien</span></a></li></ul>
-</nav>
-</div>
-<main class="page-content">
-<h1>Contact</h1>
-<p>Remplissez ce formulaire pour nous envoyer votre demande :</p>
-
-<form action="/thank-you.html" data-netlify="true" method="POST" name="contact">
-<input name="form-name" type="hidden" value="contact"/>
-<label for="nom">Nom :</label>
-<input name="nom" required="" type="text"/>
-<label for="email">Email :</label>
-<input name="email" required="" type="email"/>
-<label for="message">Message :</label>
-<textarea name="message" required=""></textarea>
-<button type="submit">Envoyer</button>
-</form>
-
-<div class="contact-box"><p>📍 1, Rue Robert Schumann, 37390, Notre Dame d’Oé</p><p>📧 Email : olivierpeneau@aol.com</p><p>📞 Téléphone : 02 47 41 33 42</p></div></main>
-<div class="bottom-bar"><p>© 2025 LETIESSE</p></div></body></html>
+<html>
+  <head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Contactez-nous</h1>
+    <form name="contact" method="POST" data-netlify="true" action="/thank-you.html">
+      <input type="hidden" name="form-name" value="contact" />
+      <p><input type="text" name="nom" placeholder="Votre nom" required></p>
+      <p><input type="email" name="email" placeholder="Votre email" required></p>
+      <p><textarea name="message" placeholder="Votre message" required></textarea></p>
+      <p><button type="submit">Envoyer</button></p>
+    </form>
+  </body>
+</html>
