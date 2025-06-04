@@ -28,7 +28,7 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.08);
 }
 </style>
-</head>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/></head>
 <body><div class="top-bar"><img class="logo" src="logo.png" style="height:100px;"/>
 <nav>
 <ul>
@@ -44,13 +44,12 @@
 <main class="page-content">
 <h1>Contact</h1>
 <p>Remplissez ce formulaire pour nous envoyer votre demande :</p>
-
-<form action="https://formspree.io/f/xldndjld" method="POST">
+<form action="/thank-you.html" data-netlify="true" method="POST" name="contact">
+<input name="form-name" type="hidden" value="contact"/>
 <input name="nom" placeholder="Votre nom" required="" type="text"/><br/>
 <input name="email" placeholder="Votre email" required="" type="email"/><br/>
 <textarea name="message" placeholder="Votre message" required="" rows="5"></textarea><br/>
-<button type="submit">Envoyer</button>
+<input type="submit" value="Envoyer"/>
 </form>
-
 <div class="contact-box"><p>📍 1, Rue Robert Schumann, 37390, Notre Dame d’Oé</p><p>📧 Email : olivierpeneau@aol.com</p><p>📞 Téléphone : 02 47 41 33 42</p></div></main>
 <div class="bottom-bar"><p>© 2025 LETIESSE</p></div></body></html>
