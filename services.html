@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<link href="style.css" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services - LETIESSE</title>
+<style>
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,0.8);
+    padding: 1rem 2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  main {
+    color: #f5f5dc;
+    max-width: 960px;
+    margin: 2rem auto;
+    background-color: rgba(0,0,0,0.6);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+  }
+  .grid img {
+    width: 80px;
+    height: auto;
+  }
+  footer {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+body {
+  background: url('ChatGPT Image 22 mai 2025, 15_44_45.png') no-repeat center center fixed !important;
+  background-size: cover !important;
+}
+
+</style>
+<style>
+.background-image {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('ChatGPT Image 22 mai 2025, 15_44_45.png') no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1;
+}
+.content {
+  position: relative;
+  z-index: 1;
+}
+</style>
+<style>
+.main-services-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+.service-card {
+  background-color: #f5f5dc;
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #222;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.service-card img.icon {
+  width: 50px;
+  height: auto;
+  margin-bottom: 0.8rem;
+}
+.service-card h3 {
+  color: #007BFF;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+.service-card ul {
+  text-align: left;
+  padding-left: 1.2rem;
+  font-size: 0.95rem;
+}
+.service-card li {
+  margin-bottom: 0.5rem;
+}
+</style>
+</head>
+<body>
+<div class="background-image"></div>
+<div class="content">
+<header>
+<img alt="Logo LETIESSE" class="logo" src="logo.png" style="height:100px;"/>
+<nav>
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="realisations.html">Réalisations</a></li>
+<li><a href="qualifications.html">Qualifications</a></li>
+<li><a href="partenaires.html">Partenaires</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="depannage_entretien.html"><span style="color:#007BFF;">Dépannage</span> <span style="color:#DC3545;">&amp; Entretien</span></a></li></ul>
+</nav>
+</header>
+<main>
+<h1>Nos services</h1>
+<p>Nous proposons des prestations de plomberie, chauffage et climatisation adaptées à vos besoins pour le neuf ou la rénovation.</p>
+<div class="grid">
+</div>
+<div class="main-services-wrapper">
+<div class="service-card">
+<img alt="chauffage" class="icon" src="fire.png"/><h3>Chauffage</h3>
+<ul>
+<li>Chaudières gaz à condensation</li>
+<li>Pompes à chaleur air/eau</li>
+<li>Plancher chauffant hydraulique</li>
+<li>Désembouage complet</li>
+</ul>
+</div>
+<div class="service-card">
+<img alt="plomberie" class="icon" src="drop.png"/><h3>Plomberie</h3>
+<ul>
+<li>Salles de bain clés en main</li>
+<li>Dépannages : fuites, joints, WC</li>
+<li>Remplacement chauffe-eau</li>
+<li>Recherche de fuites</li>
+</ul>
+</div>
+<div class="service-card">
+<img alt="climatisation" class="icon" src="snowflake.png"/><h3>Climatisation</h3>
+<ul>
+<li>Climatisation murale (split)</li>
+<li>Systèmes gainables</li>
+<li>PAC air/air réversibles</li>
+</ul>
+</div>
+<div class="service-card">
+<img alt="ventilation" class="icon" src="ventilateur.png"/>
+<h3>Ventilation</h3>
+<ul>
+<li>Installation de VMC simple ou double flux</li>
+<li>Remplacement d’anciens systèmes</li>
+<li>Entretien et dépannage</li>
+<li>Solutions pour le neuf et la rénovation</li>
+<li>Amélioration de la qualité de l’air intérieur</li>
+</ul>
+</div></div>
+</main>
+<footer>
+<p>© 2025 Entreprise LETIESSE - Tous droits réservés</p>
+</footer>
+</div>
+</body>
+</html>

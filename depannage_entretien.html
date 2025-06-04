@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<title>Dépannage &amp; Entretien</title>
+<style>
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+body::before, body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+body::before {
+  left: 0;
+  background-image: url('depannage1_light.jpg');
+}
+body::after {
+  right: 0;
+  background-image: url('depannage2_light.jpg');
+}
+
+header {
+  background-color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.title-box {
+  margin: 100px auto 20px auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  z-index: 5;
+  position: relative;
+  width: fit-content;
+}
+
+.title-box h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.blue { color: #007BFF; }
+.red { color: #DC3545; }
+
+.info-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  max-width: 1100px;
+  padding: 0 1rem;
+}
+
+.box {
+  background-color: rgba(255,255,255,0.95);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 350px;
+  width: 100%;
+}
+
+.box-small {
+  max-width: 280px;
+  text-align: center;
+}
+
+.map-container {
+  width: 100%;
+  height: 450px;
+  margin-top: 3rem;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  body::before, body::after {
+    width: 100%;
+    height: 50%;
+  }
+  body::after {
+    top: 50%;
+    left: 0;
+    right: auto;
+  }
+  .info-section {
+    padding: 1rem;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+<img alt="Logo" class="logo" src="logo.png" style="width: 160px; height: auto;"/>
+<nav>
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="realisations.html">Réalisations</a></li>
+<li><a href="qualifications.html">Qualifications</a></li>
+<li><a href="partenaires.html">Partenaires</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="depannage_entretien.html"><span class="blue">Dépannage</span> <span class="red">&amp; Entretien</span></a></li>
+</ul>
+</nav>
+</header>
+<div class="title-box">
+<h1><span class="blue">Dépannage</span> <span class="red">&amp; Entretien</span></h1>
+</div>
+<div class="info-section">
+<div class="box">
+<h2>Prix des entretiens (hors cas exceptionnel) :</h2>
+<ul>
+<li>Adoucisseur : 95.90€ H.T</li>
+<li>Chaudière fioul condensation : 209.45€ H.T</li>
+<li>Chaudière fioul (non condensation) : 184.90€ H.T</li>
+<li>Chaudière Gaz Condensation : 154.75 € H.T</li>
+<li>Chaudière Gaz Murale : 130.30€ H.T</li>
+<li>Pompe à chaleur Hybride : 234.45€ H.T</li>
+<li>Pompe à chaleur standard : 138.25€ H.T</li>
+<li>Climatisation (jusqu'à 4 unités intérieures) : 136.20€ H.T</li>
+</ul>
+<p style="margin-top: 1rem;">
+      Ces tarifs incluent le déplacement dans le département 37. Pour les chaudières fioul, le remplacement du gicleur est compris. Pour les adoucisseurs, le remplacement du filtre est inclus.
+    </p>
+</div>
+<div class="box box-small">
+<h2>Urgence ou Dépannage</h2>
+<p>
+      📞 SMS ou appel : <strong>06 30 40 50 26</strong><br/>
+      ☎️ Fixe : <strong>02 47 41 33 42</strong><br/>
+      🕐 Du lundi au vendredi : 07h–12h / 13h30–17h30
+    </p>
+</div>
+</div>
+<div class="map-container">
+<iframe allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2723.210857839276!2d0.6698431156668413!3d47.45137187917524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fcd62704665ff7%3A0x347e9980d3f6e8e0!2s1%20Rue%20Robert%20Schumann%2C%2037390%20Notre-Dame-d'O%C3%A9!5e0!3m2!1sfr!2sfr!4v1716800000000!5m2!1sfr!2sfr"></iframe>
+</div>
+</body>
+</html>
