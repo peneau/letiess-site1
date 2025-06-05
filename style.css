@@ -185,3 +185,24 @@ footer {
     margin: 10px auto;
   }
 }
+
+/* === SCROLLBAR PERSONNALISÉE POUR MENU MOBILE === */
+@media (max-width: 768px) {
+  .top-bar nav::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .top-bar nav::-webkit-scrollbar-thumb {
+    background: #f1c784;
+    border-radius: 3px;
+  }
+
+  .top-bar nav::-webkit-scrollbar-track {
+    background: #000;
+  }
+
+  .top-bar nav {
+    scrollbar-color: #f1c784 #000;
+    scrollbar-width: thin;
+  }
+}
