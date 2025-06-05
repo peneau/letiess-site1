@@ -153,3 +153,74 @@ nav a:hover {
 footer {
   height: 60px;
 }
+
+/* === Responsive fix pour la barre de navigation === */
+@media (max-width: 768px) {
+  .top-bar, nav, .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .top-bar a, nav a, .navigation a {
+    display: block;
+    padding: 8px 12px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+
+/* === Menu burger + barre contact mobile === */
+@media (max-width: 768px) {
+  .top-bar, nav, .navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #burger-toggle {
+    display: block;
+    font-size: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #nav-links.active {
+    display: flex;
+  }
+
+  .mobile-contact-bar {
+    background-color: #f1c40f;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-weight: bold;
+    z-index: 1000;
+  }
+}
+#burger-toggle {
+  display: none;
+}

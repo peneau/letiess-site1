@@ -136,7 +136,7 @@ body {
 <div class="content">
 <header>
 <img alt="Logo LETIESSE" class="logo" src="logo.png" style="height:100px;"/>
-<nav>
+<button id="burger-toggle">☰ Menu</button><nav id="nav-links">
 <ul>
 <li><a href="index.html">Accueil</a></li>
 <li><a href="services.html">Services</a></li>
@@ -195,5 +195,15 @@ body {
 <p>© 2025 Entreprise LETIESSE - Tous droits réservés</p>
 </footer>
 </div>
-</body>
+<script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const burger = document.getElementById('burger-toggle');
+  const nav = document.getElementById('nav-links');
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+});
+</script>
+</script><div class="mobile-contact-bar">📞 06 00 00 00 00 — Intervention rapide 24/48h</div></body>
 </html>
