@@ -52,23 +52,11 @@ body {
 <meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Plombier à Tours disponible tous les jours. Letiesse intervient pour vos dépannages, fuites, installations et entretiens. Réactivité et qualité garanties." name="description"/><meta content="plombier Tours, dépannage plomberie Tours, fuite eau Tours, chauffage Tours, Letiesse plombier, urgence plomberie Tours" name="keywords"/><link href="https://plombier37letiesse.com/" rel="canonical"/></head>
 <body>
 <!-- MENU BURGER MOBILE -->
-<div class="mobile-menu-overlay" id="mobile-menu-overlay">
-<button class="close-btn" id="close-menu">✕</button>
-<ul class="mobile-menu-links">
-<li><a href="index.html">Accueil</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="depannage_entretien.html">Dépannage &amp; Entretien</a></li>
-<li><a href="realisations.html">Réalisations</a></li>
-<li><a href="qualifications.html">Qualifications</a></li>
-<li><a href="partenaires.html">Partenaires</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</div>
-<button class="open-menu-btn" id="open-menu">☰</button>
+
 
 <div class="background-image"></div>
 <div class="content">
-<div class="top-bar"><img alt="Illustration plomberie Letiesse" class="logo" loading="lazy" src="logo.png" style="height:100px;"/>
+<div class="top-bar"><img alt="Illustration plomberie Letiesse" class="logo" loading="lazy" src="logo.png" style="height:100px;"/><button id="menu-toggle">☰ Menu</button>
 <nav>
 <ul>
 <li><a href="index.html">Accueil</a></li>
@@ -118,17 +106,14 @@ body {
   </style>
 </div>
 
+
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  const openMenu = document.getElementById('open-menu');
-  const closeMenu = document.getElementById('close-menu');
-  const menuOverlay = document.getElementById('mobile-menu-overlay');
-  if (openMenu && closeMenu && menuOverlay) {
-    openMenu.addEventListener('click', () => {
-      menuOverlay.style.transform = 'translateX(0)');
-    });
-    closeMenu.addEventListener('click', () => {
-      menuOverlay.style.transform = 'translateX(-100%)';
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.querySelector('.top-bar nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () {
+      nav.classList.toggle('show-nav');
     });
   }
 });
