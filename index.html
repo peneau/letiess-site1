@@ -22,9 +22,24 @@
 body { overflow: hidden; }</style>
 <meta content="Entreprise Letiesse, plombier à Tours. Dépannage plomberie, chauffage, et installations sanitaires 5j/7. Devis gratuit et intervention sous 24/48h." name="description"/><link href="/sitemap.xml" rel="sitemap" title="Sitemap" type="application/xml"/><link href="https://plombier37letiesse.com/" rel="canonical"/></head>
 <body>
+<!-- MENU BURGER SLIDE-IN -->
+<div class="mobile-menu-overlay" id="mobile-menu-overlay">
+<button class="close-btn" id="close-menu">✕</button>
+<ul class="mobile-menu-links">
+<li><a href="index.html">Accueil</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="depannage_entretien.html">Dépannage &amp; Entretien</a></li>
+<li><a href="realisations.html">Réalisations</a></li>
+<li><a href="qualifications.html">Qualifications</a></li>
+<li><a href="partenaires.html">Partenaires</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<button class="open-menu-btn" id="open-menu">☰</button>
+
 <div class="top-bar">
 <img class="logo" src="logo.png" style="height:100px;"/>
-<button id="burger-toggle">☰</button><nav id="nav-links">
+<nav id="nav-links" style="display: none;">
 <ul>
 <li><a href="index.html">Accueil</a></li>
 <li><a href="services.html">Services</a></li>
@@ -44,15 +59,21 @@ body { overflow: hidden; }</style>
 </div>
 </div>
 <div class="bottom-bar"><p>© 2025 LETIESSE</p></div>
-<div class="mobile-contact-bar">📞 02 47 41 33 42 — Intervention rapide 24/48h</div><script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const burger = document.getElementById('burger-toggle');
-      const nav = document.getElementById('nav-links');
-      if (burger && nav) {
-        burger.addEventListener('click', () => {
-          nav.classList.toggle('active');
-        });
-      }
+<div class="mobile-contact-bar">📞 02 47 41 33 42 — Intervention rapide 24/48h</div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const openMenu = document.getElementById('open-menu');
+  const closeMenu = document.getElementById('close-menu');
+  const menuOverlay = document.getElementById('mobile-menu-overlay');
+  if (openMenu && closeMenu && menuOverlay) {
+    openMenu.addEventListener('click', () => {
+      menuOverlay.style.transform = 'translateX(0)';
     });
-    </script></body>
+    closeMenu.addEventListener('click', () => {
+      menuOverlay.style.transform = 'translateX(-100%)';
+    });
+  }
+});
+</script>
+</body>
 </html>
