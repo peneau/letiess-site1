@@ -176,3 +176,25 @@ img, iframe {
   box-sizing: border-box;
   overflow-x: hidden;
 }
+
+/* === AFFICHAGE DES ONGLETS EN COLONNE SUR MOBILE === */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-bar nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .top-bar nav a {
+    font-size: 1em;
+    margin: 6px 0;
+    padding: 8px 12px;
+    display: block;
+  }
+}
