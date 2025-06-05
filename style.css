@@ -186,7 +186,6 @@ footer {
   }
 }
 
-/* === SCROLLBAR PERSONNALISÉE POUR MENU MOBILE === */
 @media (max-width: 768px) {
   .top-bar nav::-webkit-scrollbar {
     height: 6px;
