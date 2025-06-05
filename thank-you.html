@@ -1,14 +1,46 @@
 
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <title>Merci</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Merci pour votre message !</h1>
-    <p>Nous vous répondrons dès que possible.</p>
-    <a href="index.html">Retour à l'accueil</a>
-  </body>
+<head>
+<title>Merci</title>
+<meta charset="utf-8"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- MENU BURGER SLIDE-IN -->
+<div class="mobile-menu-overlay" id="mobile-menu-overlay">
+<button class="close-btn" id="close-menu">✕</button>
+<ul class="mobile-menu-links">
+<li><a href="index.html">Accueil</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="depannage_entretien.html">Dépannage &amp; Entretien</a></li>
+<li><a href="realisations.html">Réalisations</a></li>
+<li><a href="qualifications.html">Qualifications</a></li>
+<li><a href="partenaires.html">Partenaires</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<button class="open-menu-btn" id="open-menu">☰</button>
+
+<h1>Merci pour votre message !</h1>
+<p>Nous vous répondrons dès que possible.</p>
+<a href="index.html">Retour à l'accueil</a>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const openMenu = document.getElementById('open-menu');
+  const closeMenu = document.getElementById('close-menu');
+  const menuOverlay = document.getElementById('mobile-menu-overlay');
+  if (openMenu && closeMenu && menuOverlay) {
+    openMenu.addEventListener('click', () => {
+      menuOverlay.style.transform = 'translateX(0)';
+    });
+    closeMenu.addEventListener('click', () => {
+      menuOverlay.style.transform = 'translateX(-100%)';
+    });
+  }
+});
+</script>
+</body>
 </html>

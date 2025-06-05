@@ -37,7 +37,22 @@
   color: beige;
 }
 </style></head>
-<body><div class="top-bar"><img class="logo" src="logo.png" style="height:100px;"/>
+<body>
+<!-- MENU BURGER SLIDE-IN -->
+<div class="mobile-menu-overlay" id="mobile-menu-overlay">
+<button class="close-btn" id="close-menu">✕</button>
+<ul class="mobile-menu-links">
+<li><a href="index.html">Accueil</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="depannage_entretien.html">Dépannage &amp; Entretien</a></li>
+<li><a href="realisations.html">Réalisations</a></li>
+<li><a href="qualifications.html">Qualifications</a></li>
+<li><a href="partenaires.html">Partenaires</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<button class="open-menu-btn" id="open-menu">☰</button>
+<div class="top-bar"><img class="logo" src="logo.png" style="height:100px;"/>
 <nav>
 <ul>
 <li><a href="index.html">Accueil</a></li>
@@ -147,5 +162,21 @@ window.onload = () => {
       }
     }
   });
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const openMenu = document.getElementById('open-menu');
+  const closeMenu = document.getElementById('close-menu');
+  const menuOverlay = document.getElementById('mobile-menu-overlay');
+  if (openMenu && closeMenu && menuOverlay) {
+    openMenu.addEventListener('click', () => {
+      menuOverlay.style.transform = 'translateX(0)';
+    });
+    closeMenu.addEventListener('click', () => {
+      menuOverlay.style.transform = 'translateX(-100%)';
+    });
+  }
+});
 </script>
 </body></html>

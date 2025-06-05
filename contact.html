@@ -29,7 +29,22 @@
 }
 </style>
 </head>
-<body><div class="top-bar"><img class="logo" src="logo.png" style="height:100px;"/>
+<body>
+<!-- MENU BURGER SLIDE-IN -->
+<div class="mobile-menu-overlay" id="mobile-menu-overlay">
+<button class="close-btn" id="close-menu">✕</button>
+<ul class="mobile-menu-links">
+<li><a href="index.html">Accueil</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="depannage_entretien.html">Dépannage &amp; Entretien</a></li>
+<li><a href="realisations.html">Réalisations</a></li>
+<li><a href="qualifications.html">Qualifications</a></li>
+<li><a href="partenaires.html">Partenaires</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<button class="open-menu-btn" id="open-menu">☰</button>
+<div class="top-bar"><img class="logo" src="logo.png" style="height:100px;"/>
 <nav>
 <ul>
 <li><a href="index.html">Accueil</a></li>
@@ -44,13 +59,27 @@
 <main class="page-content">
 <h1>Contact</h1>
 <p>Remplissez ce formulaire pour nous envoyer votre demande :</p>
-
 <form action="https://formspree.io/f/xldndjld" method="POST">
 <input name="nom" placeholder="Votre nom" required="" type="text"/><br/>
 <input name="email" placeholder="Votre email" required="" type="email"/><br/>
 <textarea name="message" placeholder="Votre message" required="" rows="5"></textarea><br/>
 <button type="submit">Envoyer</button>
 </form>
-
 <div class="contact-box"><p>📍 1, Rue Robert Schumann, 37390, Notre Dame d’Oé</p><p>📧 Email : olivierpeneau@aol.com</p><p>📞 Téléphone : 02 47 41 33 42</p></div></main>
-<div class="bottom-bar"><p>© 2025 LETIESSE</p></div></body></html>
+<div class="bottom-bar"><p>© 2025 LETIESSE</p></div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const openMenu = document.getElementById('open-menu');
+  const closeMenu = document.getElementById('close-menu');
+  const menuOverlay = document.getElementById('mobile-menu-overlay');
+  if (openMenu && closeMenu && menuOverlay) {
+    openMenu.addEventListener('click', () => {
+      menuOverlay.style.transform = 'translateX(0)';
+    });
+    closeMenu.addEventListener('click', () => {
+      menuOverlay.style.transform = 'translateX(-100%)';
+    });
+  }
+});
+</script>
+</body></html>
