@@ -224,3 +224,33 @@ footer {
 #burger-toggle {
   display: none;
 }
+
+/* === Mise à jour du menu burger === */
+#burger-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #burger-toggle {
+    display: block;
+    font-size: 2em;
+    background-color: #f1c40f; /* beige clair */
+    color: #000000; /* noir */
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  #nav-links.active {
+    display: flex;
+  }
+}
