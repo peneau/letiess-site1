@@ -154,30 +154,6 @@ footer {
   height: 60px;
 }
 
-/* === CORRECTION DE DÉBORDEMENT HORIZONTAL === */
-html, body {
-  overflow-x: hidden;
-  max-width: 100%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-img, iframe {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.section, .content, .bloc, .row, .col {
-  max-width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-/* === AFFICHAGE DES ONGLETS EN COLONNE SUR MOBILE === */
 @media (max-width: 768px) {
   .top-bar {
     flex-direction: column;
@@ -185,16 +161,24 @@ img, iframe {
   }
 
   .top-bar nav {
-    display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
   }
 
   .top-bar nav a {
-    font-size: 1em;
-    margin: 6px 0;
-    padding: 8px 12px;
     display: block;
+    width: auto;
+    padding: 10px;
+    margin: 2px 0;
+    font-size: 0.95em;
+    text-align: center;
+  }
+
+  .top-bar img.logo {
+    max-width: 80%;
+    height: auto;
+    margin: 10px auto;
   }
 }
