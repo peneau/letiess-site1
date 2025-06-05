@@ -154,38 +154,6 @@ footer {
   height: 60px;
 }
 
-/* === VERSION MOBILE RESPONSIVE AVEC MENU HORIZONTAL SCROLLABLE === */
-@media (max-width: 768px) {
-  .top-bar {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .top-bar nav {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    padding: 10px 0;
-    width: 100%;
-    justify-content: flex-start;
-  }
-
-  .top-bar nav a {
-    flex: 0 0 auto;
-    margin: 0 10px;
-    padding: 10px 5px;
-    font-size: 0.95em;
-    color: #f1c784;
-    text-decoration: none;
-  }
-
-  .top-bar img.logo {
-    max-width: 80%;
-    height: auto;
-    margin: 10px auto;
-  }
-}
-
 @media (max-width: 768px) {
   .top-bar nav::-webkit-scrollbar {
     height: 6px;
@@ -203,5 +171,7 @@ footer {
   .top-bar nav {
     scrollbar-color: #f1c784 #000;
     scrollbar-width: thin;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 }
