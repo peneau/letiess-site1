@@ -99,7 +99,7 @@ html, body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: url('background_new.jpg') !important;
+    background-image: url('background_new.webp') !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
